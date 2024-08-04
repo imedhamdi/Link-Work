@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JobFinder - Liste des offres d'emploi">
+    <title>JobFinder - Offres d'emploi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    #offres-list {
+        padding: 80px 0;
+    }
+
+    .job-listing-all {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .job-details {
+        flex: 1;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .job-description {
+        flex: 1;
+        border-left: 1px solid #e0e0e0;
+        padding-left: 20px;
+    }
+
+    .job-description h4 {
+        margin-top: 0;
+    }
+
+    .job-details h3 {
+        margin-top: 0;
+        color: #007bff;
+    }
+
+    .job-details p,
+    .job-description p {
+        margin: 5px 0;
+    }
+
+    .apply-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #007bff;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        align-self: flex-start;
+    }
+
+    .apply-btn:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<body>
+
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Link&Work</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="offres.html" class="active">Offres</a></li>
+                    <li><a href="#">Entreprises</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#" class="cta-btn">Déposer CV</a></li>
+                    <li><a href="seConnecter.html" class="login-btn" id="login-btn">Se connecter</a></li>
+                    <li><a href="sinscrire.html" class="signup-btn" id="signup-btn">S'inscrire</a></li>
+                    <li><button id="logout-btn" style="display:none;" onclick="logout()">Se déconnecter</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="offres-list">
+        <div class="container">
+            
+            <div id="offres-container">
+                <!-- Exemple d'offre insérée directement -->
+                <div class="job-listing-all">
+                    <div class="job-details">
+                        <h3>Développeur Full-stack</h3>
+                        <p class="company"><i class="fas fa-building"></i> Jean Dupont</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Paris</p>
+                        <p class="salary"><i class="fas fa-money-bill-wave"></i> 30000 - 45000 €</p>
+                        <p class="details">
+                            <strong>Type de contrat:</strong> CDI<br>
+                            <strong>Date de publication:</strong> 2024-07-30<br>
+                            <strong>Niveau d'expérience requis:</strong> Confirmé<br>
+                            <strong>Niveau d'études requis:</strong> Master<br>
+                            <strong>Télétravail:</strong> Partiel<br>
+                            <strong>Avantages:</strong> Tickets restaurant, mutuelle<br>
+                            <strong>Nombre de postes:</strong> 2<br>
+                            <strong>Date limite de candidature:</strong> 2024-08-15<br>
+                            <strong>Contact:</strong> Jean Dupont (jean.dupont@example.com)<br>
+                            <strong>Référence d'offre:</strong> REF-2024-123
+                        </p>
+                        <a href="#" class="apply-btn">Postuler</a>
+                    </div>
+                    <div class="job-description">
+                        <h4>Description</h4>
+                        <p>Développement et maintenance d'applications web. Connaissance des technologies Microsoft SharePoint/PowerBI et la couche Powell. Expertise dans la gestion de projets et portefeuille de projets. Maîtrise de la gestion de la relation client : Sens du service aux métiers et sens du résultat, appropriation des problèmes. Expertise dans la prise en compte des besoins, de leurs évolutions et dans l'accompagnement à la prise de décision raisonnée.</p>
+                    </div>
+                </div>
+                <!-- Fin de l'exemple d'offre -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pour les Candidats</h3>
+                    <ul>
+                        <li><a href="#">Rechercher des offres</a></li>
+                        <li><a href="#">Déposer un CV</a></li>
+                        <li><a href="#">Conseils de carrière</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Pour les Entreprises</h3>
+                    <ul>
+                        <li><a href="#">Publier une offre</a></li>
+                        <li><a href="#">Trouver des candidats</a></li>
+                        <li><a href="#">Solutions RH</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>À propos</h3>
+                    <ul>
+                        <li><a href="#">À propos de nous</a></li>
+                        <li><a href="#">Contactez-nous</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>&copy; 2024 Work&Link</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Exemple de données d'offres (simulées, à remplacer par les données réelles)
+        const offres = [
+            {
+                id_offre: 1,
+                titre: "Développeur Full-stack",
+                description: "Développement et maintenance d'applications web.La Connaissance des technologies Microsoft SharePoint/PowerBI ET la couche PowellExpertise dans la gestion de projets et portefeuille de projets.Maîtrise de la gestion de la relation client : Sens du service aux métiers et sens du résultat, appropriation des problèmesExpertise dans la prise en compte des besoins, de leurs évolutions et dans oppement et maintenance d'applications web.La Connaissance des technologies Microsoft SharePoint/PowerBI ET la couche PowellExpertise dans la gestion de projets et portefeuille de projets.Maîtrise de la gestion de la relation client : Sens du service aux métiers et sens du résultat, appropriation des problèmesExpertise dans la prise en compte des besoins, de leurs évolutions et dans l'accompagnement à la prise de décision raisonnée oppement et maintenance d'applications web.La Connaissance des technologies Microsoft SharePoint/PowerBI ET la couche PowellExpertise dans la gestion de projets et portefeuille de projets.Maîtrise de la gestion de la relation client : Sens du service aux métiers et sens du résultat, appropriation des problèmesExpertise dans la prise en compte des besoins, de leurs évolutions et dans l'accompagnement à la prise de décision raisonnée l'accompagnement à la prise de décision raisonnée",
+                type_contrat: "CDI",
+                date_publication: "2024-07-30",
+                lieu: "Paris",
+                salaire_min: 30000,
+                salaire_max: 45000,
+                niveau_experience: "Confirmé",
+                niveau_etudes: "Master",
+                teletravail: "Partiel",
+                avantages: "Tickets restaurant, mutuelle",
+                nombre_postes: 2,
+                date_limite_candidature: "2024-08-15",
+                contact_nom: "Jean Dupont",
+                contact_email: "jean.dupont@example.com",
+                reference_offre: "REF-2024-123"
+            },
+            // Ajoutez d'autres offres ici si nécessaire
+        ];
+
+
+        // Fonction pour afficher les offres sur la page
+        function afficherOffres() {
+            const offresContainer = document.getElementById('offres-container');
+            offres.forEach(offre => {
+                const offreHTML = `
+                    <div class="job-listing-all">
+                        <div class="job-details">
+                            <h3>${offre.titre}</h3>
+                            <p class="company"><i class="fas fa-building"></i> ${offre.contact_nom}</p>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> ${offre.lieu}</p>
+                            <p class="salary"><i class="fas fa-money-bill-wave"></i> ${offre.salaire_min} - ${offre.salaire_max} €</p>
+                            <p class="details">
+                                <strong>Type de contrat:</strong> ${offre.type_contrat}<br>
+                                <strong>Date de publication:</strong> ${offre.date_publication}<br>
+                                <strong>Niveau d'expérience requis:</strong> ${offre.niveau_experience}<br>
+                                <strong>Niveau d'études requis:</strong> ${offre.niveau_etudes}<br>
+                                <strong>Télétravail:</strong> ${offre.teletravail}<br>
+                                <strong>Avantages:</strong> ${offre.avantages}<br>
+                                <strong>Nombre de postes:</strong> ${offre.nombre_postes}<br>
+                                <strong>Date limite de candidature:</strong> ${offre.date_limite_candidature}<br>
+                                <strong>Contact:</strong> ${offre.contact_nom} (${offre.contact_email})<br>
+                                <strong>Référence d'offre:</strong> ${offre.reference_offre}
+                            </p>
+                            <a href="#" class="apply-btn">Postuler</a>
+                        </div>
+                        <div class="job-description">
+                            <h4>Description</h4>
+                            <p>${offre.description}</p>
+                        </div>
+                    </div>
+                `;
+                offresContainer.innerHTML += offreHTML;
+            });
+        }
+
+
+        // Appel de la fonction pour afficher les offres au chargement de la page
+        afficherOffres();
+    </script>
+    <script src="/routes/scriptIndex.js"></script>
+</body>
+
+</html>
