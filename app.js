@@ -12,6 +12,7 @@ const app = express();
 const pool = require('./db/db');
 const bodyParser = require('body-parser');
 
+
 // Body Parser (inclus dans Express depuis la v4.16)
 app.use(bodyParser.json());
 app.use(express.json());
