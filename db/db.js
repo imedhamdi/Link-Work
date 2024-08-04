@@ -1,10 +1,11 @@
 const mysql = require('mysql2');
 require('dotenv').config();
 const pool = mysql.createPool({
-  host:process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password:process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
+  port:'5432',
+  host:'dpg-cqnu9qrv2p9s73ahv7k0-a',
+  user: 'job_finder_gyex_user',
+  password:'Z3SW1aH3872xg2YdZN1wXGIC8U4xZTZ3',
+  database:'job_finder_gyex',
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0

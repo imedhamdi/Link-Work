@@ -10,7 +10,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-   
+
 }
 
 /* Styles pour l'entête (header) */
@@ -18,71 +18,79 @@ header {
     background-color: #fff;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header-container {
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px; /* Ajustez selon votre besoin */
+    max-width: 1200px;
+    /* Ajustez selon votre besoin */
     margin: 0 auto;
-    padding: 0 20px; /* Ajoutez un peu de padding si nécessaire */
-  }
-  
-  .logo {
+    padding: 0 20px;
+    /* Ajoutez un peu de padding si nécessaire */
+}
+
+.logo {
     font-size: 2rem;
     font-weight: bold;
-    color: #007bff; /* Bleu Bootstrap */
+    color: #007bff;
+    /* Bleu Bootstrap */
     text-decoration: none;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  }
-  
-  nav li {
+}
+
+nav li {
     margin-left: 20px;
-  }
-  
-  nav a {
+}
+
+nav a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
     transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
     color: #007bff;
-  }
-  
-  .cta-btn, .login-btn, .signup-btn , #logout-btn {
+}
+
+.cta-btn,
+.login-btn,
+.signup-btn,
+#logout-btn {
     padding: 8px 15px;
     border-radius: 5px;
-  }
-  
-  .cta-btn {
+}
+
+.cta-btn {
     background-color: #007bff;
     color: #fff;
     border: none;
-  }
-  
-  .login-btn {
+}
+
+.login-btn {
     background-color: transparent;
     color: #007bff;
     border: 2px solid #007bff;
-  }
-  
-  .signup-btn, #logout-btn {
-    background-color: #28a745; /* Vert Bootstrap */
+}
+
+.signup-btn,
+#logout-btn {
+    background-color: #28a745;
+    /* Vert Bootstrap */
     color: #fff;
     border: none;
-  }
-  
+}
+
 /* Styles pour la section Hero */
 #hero {
     background-color: #f0f8ff;
@@ -155,7 +163,7 @@ header {
 .location {
     color: #666;
     margin-bottom: 10px;
- 
+
 }
 
 .apply-btn {
@@ -294,37 +302,49 @@ main {
 
 #job-listings h1 {
     text-align: center;
-    margin-bottom: 3rem; /* 3rem au lieu de 50px pour plus de cohérence */
-    font-size: 2.5rem; /* Taille de police en rem pour flexibilité */
+    margin-bottom: 3rem;
+    /* 3rem au lieu de 50px pour plus de cohérence */
+    font-size: 2.5rem;
+    /* Taille de police en rem pour flexibilité */
 }
 
 .job-listing {
     background-color: #fff;
-    padding: 2rem; /* 2rem au lieu de 30px */
-    border-radius: 0.5rem; /* 0.5rem pour un rayon plus cohérent */
-    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* Valeurs en rem */
-    margin-bottom: 5rem; /* 2rem au lieu de 30px */
+    padding: 2rem;
+    /* 2rem au lieu de 30px */
+    border-radius: 0.5rem;
+    /* 0.5rem pour un rayon plus cohérent */
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    /* Valeurs en rem */
+    margin-bottom: 5rem;
+    /* 2rem au lieu de 30px */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-   margin-left: 15rem;
-   margin-right: 15rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }
 
 .job-listing:hover {
-    transform: translateY(-0.3125rem); /* 0.3125rem au lieu de 5px */
-    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.15); /* Valeurs en rem */
+    transform: translateY(-0.3125rem);
+    /* 0.3125rem au lieu de 5px */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.15);
+    /* Valeurs en rem */
 }
 
 .job-header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between; /* Ajouté pour espacer les éléments */
-    gap: 1rem; /* Espacement entre les éléments de l'en-tête */
+    justify-content: space-between;
+    /* Ajouté pour espacer les éléments */
+    gap: 1rem;
+    /* Espacement entre les éléments de l'en-tête */
 }
 
 .company-logo {
-    max-width: 6.25rem; /* 100px en rem */
-    margin-right: 1.25rem; /* 20px en rem */
+    max-width: 6.25rem;
+    /* 100px en rem */
+    margin-right: 1.25rem;
+    /* 20px en rem */
     flex-shrink: 0;
 }
 
@@ -338,23 +358,30 @@ main {
 
 .job-meta {
     display: flex;
-    gap: 1.25rem; /* 20px en rem */
+    gap: 1.25rem;
+    /* 20px en rem */
     align-items: center;
     align-content: space-between;
-    margin-bottom: 1.25rem; /* 20px en rem */
+    margin-bottom: 1.25rem;
+    /* 20px en rem */
 }
 
-.company, .location, .salary {
+.company,
+.location,
+.salary {
     color: #666;
 }
 
 .description {
-    margin: 1.25rem 0; /* 20px en rem */
+    margin: 1.25rem 0;
+    /* 20px en rem */
     color: #444;
-    line-height: 1.6; /* Amélioration de la lisibilité */
+    line-height: 1.6;
+    /* Amélioration de la lisibilité */
     display: -webkit-box;
     -webkit-line-clamp: 3;
-    line-clamp: 3;  /* Propriété standard non préfixée */
+    line-clamp: 3;
+    /* Propriété standard non préfixée */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -364,15 +391,19 @@ main {
     display: inline-block;
     background-color: #007bff;
     color: white;
-    padding: 0.5rem 1rem; /* 8px 16px en rem */
-    border-radius: 0.3125rem; /* 5px en rem */
+    padding: 0.5rem 1rem;
+    /* 8px 16px en rem */
+    border-radius: 0.3125rem;
+    /* 5px en rem */
     text-decoration: none;
     transition: background-color 0.3s ease;
-    margin-left: auto; /* Aligné à droite */
+    margin-left: auto;
+    /* Aligné à droite */
 }
 
 .apply-btn:hover {
-    background-color: #0056b3; /* Couleur légèrement plus sombre pour l'effet au survol */
+    background-color: #0056b3;
+    /* Couleur légèrement plus sombre pour l'effet au survol */
 }
 
 /* Styles pour le pied de page (footer) */
@@ -386,8 +417,10 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    border-top: 1px solid #ddd; /* Ligne supérieure grise claire */
-    padding-top: 20px; /* Ajoute un peu d'espace au-dessus de la ligne */
+    border-top: 1px solid #ddd;
+    /* Ligne supérieure grise claire */
+    padding-top: 20px;
+    /* Ajoute un peu d'espace au-dessus de la ligne */
 }
 
 .footer-content {
@@ -572,6 +605,7 @@ footer {
     outline: none;
     box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
 }
+
 /**********Style pour les filtres ***************/
 
 /**********Style pour les filtres ***************/
@@ -598,7 +632,8 @@ footer {
     flex-wrap: wrap;
 
     gap: 1rem;
-    margin-bottom: 2rem; /* Augmentez la marge inférieure pour plus d'espace entre les sections */
+    margin-bottom: 2rem;
+    /* Augmentez la marge inférieure pour plus d'espace entre les sections */
 }
 
 /* Styles pour les groupes de champs (label + input/select) */
@@ -662,6 +697,7 @@ footer {
         grid-column: span 3;
     }
 }
+
 button.close-job-btn,
 button.reopen-job-btn {
     background: #ff4757;
@@ -671,10 +707,12 @@ button.reopen-job-btn {
     border-radius: 4px;
     cursor: pointer;
 }
+
 button.close-job-btn:hover,
 button.reopen-job-btn:hover {
     background: #e04040;
 }
+
 .section form input,
 .section form textarea {
     width: 100%;
@@ -768,12 +806,14 @@ button.reopen-job-btn:hover {
 }
 
 .candidature .update-status-btn {
-    background: #5bc0de; /* Bleu clair */
+    background: #5bc0de;
+    /* Bleu clair */
     color: #fff;
 }
 
 .candidature .update-status-btn:hover {
-    background: #31b0d5; /* Bleu clair plus foncé pour le survol */
+    background: #31b0d5;
+    /* Bleu clair plus foncé pour le survol */
 }
 
 
@@ -794,6 +834,7 @@ button.reopen-job-btn:hover {
 .candidature .schedule-interview-btn:hover {
     background: #138496;
 }
+
 #scheduler-modal {
     position: fixed;
     top: 50%;
@@ -812,10 +853,10 @@ button.reopen-job-btn:hover {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-  }
-  
-  /* Style des boutons de pagination */
-  #pagination button {
+}
+
+/* Style des boutons de pagination */
+#pagination button {
     background-color: #f0f0f0;
     border: 1px solid #ddd;
     color: #333;
@@ -824,25 +865,126 @@ button.reopen-job-btn:hover {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
-  }
-  
-  /* Style du bouton actif */
-  #pagination button.active {
-    background-color: #007bff; /* Couleur de votre choix pour le bouton actif */
+}
+
+/* Style du bouton actif */
+#pagination button.active {
+    background-color: #007bff;
+    /* Couleur de votre choix pour le bouton actif */
     color: white;
     border-color: #007bff;
-  }
-  
-  /* Style des boutons désactivés */
-  #pagination button:disabled {
+}
+
+/* Style des boutons désactivés */
+#pagination button:disabled {
     background-color: #f0f0f0;
     color: #999;
     cursor: not-allowed;
-  }
-  
-  /* Style au survol */
-  #pagination button:hover:not(:disabled) {
+}
+
+/* Style au survol */
+#pagination button:hover:not(:disabled) {
     background-color: #ddd;
-  }
-  
-  
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        gap: 10px;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+    }
+
+    nav ul li a,
+    .cta-btn,
+    .login-btn,
+    .signup-btn {
+        display: block;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .cta-btn,
+    .login-btn,
+    .signup-btn {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #logout-btn {
+        width: 100%;
+        padding: 10px 20px;
+        margin-top: 10px;
+        background-color: white;
+        color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #logout-btn:hover {
+        background-color: #0056b3;
+        color: white;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        padding: 0 10px;
+    }
+
+    .logo {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav ul li a,
+    .cta-btn,
+    .login-btn,
+    .signup-btn {
+        padding: 8px 10px;
+    }
+
+    .cta-btn,
+    .login-btn,
+    .signup-btn,
+    #logout-btn {
+        font-size: 0.9em;
+    }
+}
